@@ -1,0 +1,363 @@
+/* HOME */
+.App {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* Ajustar el ancho máximo del contenido, puede ajustarse según tus necesidades */
+  margin: 0 auto; /* Centrar el contenido */
+  padding: 20px; /* Agregar un espacio interno al contenedor */
+}
+
+.icon-link > .bi {
+  width: 0.75em;
+  height: 0.75em;
+}
+
+/*
+ * Custom translucent site header
+ */
+
+.site-header {
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  padding: 20px; /* Agregar espaciado al encabezado */
+}
+
+.site-header a {
+  color: #8e8e8e;
+  transition: color 0.15s ease-in-out;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.form-control-dark {
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fullscreen-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgport img{
+  width:100%;
+}
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+
+  .site-header {
+    padding: 30px; /* Ajustar el espaciado para pantallas más grandes */
+  }
+}
+
+/*FIN HOME*/
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Media query para ajustes específicos en pantallas más claras */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+.bi {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+
+/*
+ * Sidebar
+ */
+
+@media (min-width: 768px) {
+  .sidebar .offcanvas-lg {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px;
+  }
+  .navbar-search {
+    display: block;
+  }
+}
+
+
+.center{
+  width:75%;
+  margin:0px auto;
+}
+
+#logo{
+  width:30%;
+  font-size:30px;
+  float:left;
+  margin-top:35px;
+}
+
+#logo img{
+  height: 3em;
+}
+
+#menu a{
+  text-decoration:none;
+  color: #444;
+  transition: 300ms all;
+}
+
+#menu a:hover{
+  color:#24aed8
+}
+
+.active{
+  border-bottom: 2px solid #24aed8;
+}
+
+
+#content{
+  width:70%;
+  float:left;
+  min-height:650px;
+  margin-right:20px;
+}
+
+.mid-form{
+  width:50%;
+  margin: 0px auto;
+}
+
+.mid-form label{
+  display: block;
+  float: left;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 17px; 
+
+}
+
+input[type="text"], 
+textarea{
+  width: 100%;
+  min-height:30px;
+  border: 1px solid #ccc;
+  padding:3px;
+  margin-bottom:5px;
+  transition:300ms all;
+}
+input[type="text"]:focus,
+textarea{
+  box-shadow:0px 0px 2px #ccc inset;
+  outline: none;
+}
+
+textarea{
+  width: 100%;
+  height: 150px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 300px;
+  outline: none;
+}
+
+.radiobuttons{
+  margin-top:10px;
+  margin-bottom:10px;
+  float:left;
+}
+
+.article-item .image-wrap{
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+  float:left;
+  /*border:1px solid #ccc;*/
+}
+
+.article-item .image-wrap img{
+  height:100%;
+  text-align: center;
+}
+
+
+.subheader{
+  font-size:38px;
+  border-bottom: 1px solid #eee;
+  padding-bottom:10px;
+}
+
+/* RESPONSIVE */
+
+/* Desde la anchura 0px hasta la anchura 1492px de pantalla*/
+@media (max-width: 1492px){
+  /*Se ejecutarán estos estilos */
+  .center{
+      width:85%;
+  }
+}
+/* Desde la anchura 0px hasta la anchura 1316px de pantalla*/
+@media (max-width: 1316px){
+  /*Se ejecutarán estos estilos */
+  .center{
+      width:95%;
+  }
+  #menu ul{
+      width:auto;
+  }
+}
+
+/* Desde la anchura 0px hasta la anchura 1203px de pantalla*/
+@media (max-width: 1203px){
+  #logo{
+      float:none;
+      width: 500px;
+      margin: 0px auto;
+      margin-top:20px;
+  }
+  #menu ul{
+      clear:both;
+      float:none;
+      width:100%;
+      margin:0px;
+      padding:0px;
+      line-height:43px;
+  }
+
+  .mid-form{
+      width: 70%;
+  }
+}
+/* Estilos para pantallas con un ancho máximo de 767px */
+@media (max-width: 767px) {
+  /* Estilos para ocultar la lista de elementos en el menú */
+ .banner h1 {
+    padding-inline:10%;
+    
+  }
+
+  #logobanner{
+   padding-left:5%;
+    animation: girar-2 infinite 40s linear;
+  }
+  
+  #secondlogobanner{
+    padding-right:5%;
+    animation: girar-3 infinite 40s linear;
+  }
+  
+}
+/* Estilos para pantallas con un ancho máximo de 767px */
+@media (max-width: 659px) {
+  /* Estilos para ocultar la lista de elementos en el menú */
+ .banner h1 {
+    display:none;
+    
+  }
+
+  #logobanner{
+   padding-left:5%;
+    animation: girar-2 infinite 40s linear;
+  }
+  
+  #secondlogobanner{
+    padding-right:5%;
+    animation: girar-3 infinite 40s linear;
+  }
+  
+}
+/* Desde la anchura 0px hasta la anchura 494px de pantalla*/
+@media (max-width: 532px){
+  /*Se ejecutarán estos estilos */
+ .interested, #articles .slider{
+  display:none;
+}
+
+}
+
+/* Desde la anchura 0px hasta la anchura 494px de pantalla*/
+@media (max-width: 494px){
+  /*Se ejecutarán estos estilos */
+ .image-wrap{
+  width:15%;
+}
+  #menu ul{
+      line-height: 10px;
+  }
+
+  #menu ul li{
+      margin-left: 2px;
+      margin-right: 3px;
+  }
+
+  #slider{
+      height:180px;
+  }
+
+  #slider.slider-small{
+      height:100px;
+  }
+}
